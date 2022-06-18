@@ -5,7 +5,7 @@ name: hello world
 on: [pull_request,push]
 
 jobs:
-  hello-world-setup:
+  setup:
     runs-on: ubuntu-latest
     
     defaults:
@@ -15,8 +15,10 @@ jobs:
     steps:
       - run: ./file.sh
 
-  hello-world-build:
+ build:
+    needs: setup
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
       - run: echo $HOSTNAME-"Hello World"
