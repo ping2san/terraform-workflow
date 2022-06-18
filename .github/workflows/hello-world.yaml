@@ -2,21 +2,10 @@
 # This is a test gitflow job
 name: hello world
 
-on: [pull_request,push]
+on: [push,pull_request]
 
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-
-    steps:
-      - run:  echo "Setup in progress ...."
-    
-
-#    steps:
-#     - run: ./file.sh
-
- build:
-    needs: setup
+  build:
     runs-on: ubuntu-latest
 
     steps:
