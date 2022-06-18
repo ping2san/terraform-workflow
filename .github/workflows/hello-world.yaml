@@ -7,10 +7,10 @@ on: [pull_request,push]
 jobs:
   setup:
     runs-on: ubuntu-latest
+
+    steps:
+      - run:  echo "Setup in progress ...."
     
-    defaults:
-      run:
-        shell: bash
 
 #    steps:
 #     - run: ./file.sh
