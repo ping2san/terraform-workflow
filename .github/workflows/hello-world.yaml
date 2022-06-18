@@ -8,7 +8,7 @@ jobs:
   hello-world-setup:
     runs-on: ubuntu-latest
     steps:
-      - run: ./scripts/file.sh
+      - run: ../workflows/scripts/file.sh
 
   hello-world-build:
     runs-on: ubuntu-latest
