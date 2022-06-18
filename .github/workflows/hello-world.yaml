@@ -12,8 +12,8 @@ jobs:
       run:
         shell: bash
 
-    steps:
-      - run: ./file.sh
+#    steps:
+#     - run: ./file.sh
 
  build:
     needs: setup
