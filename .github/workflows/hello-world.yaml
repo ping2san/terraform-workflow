@@ -1,0 +1,15 @@
+---
+# This is a test gitflow job
+name: hello world
+
+on: [push,pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo $HOSTNAME-"Hello World"
+  
+  
