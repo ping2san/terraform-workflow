@@ -7,8 +7,13 @@ on: [pull_request,push]
 jobs:
   hello-world-setup:
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        shell: bash
+
     steps:
-      - run: sh file.sh
+      - run: ./file.sh
 
   hello-world-build:
     runs-on: ubuntu-latest
