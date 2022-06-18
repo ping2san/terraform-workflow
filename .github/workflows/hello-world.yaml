@@ -8,7 +8,7 @@ jobs:
   hello-world-setup:
     runs-on: ubuntu-latest
     steps:
-      - run: ./file.sh
+      - run: sh file.sh
 
   hello-world-build:
     runs-on: ubuntu-latest
